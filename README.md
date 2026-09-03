@@ -14,18 +14,28 @@ Then open `http://localhost:8000`.
 
 ## Add the final content
 
-All page content currently lives in `index.html`. Before publishing, add or replace:
+All page content currently lives in `index.html`. Before publishing future seminars, add or replace:
 
 - the featured seminar paper title, time, venue, and abstract;
-- the text-based header mark with an authorized IIMB logo asset, if one is supplied.
+- the speaker details for upcoming seminars.
 
 Speaker photographs should use a consistent portrait crop. Images around 900 × 1100 pixels in WebP or AVIF format are recommended. Write meaningful alternative text when a photograph communicates information; if the adjacent name makes it purely decorative, use an empty `alt` value.
 
 ## Publish with GitHub Pages
 
-1. Create a GitHub repository and push this directory to its `main` branch.
-2. In the repository settings, open **Pages**.
-3. Set the source to **GitHub Actions**.
-4. The included workflow will deploy the site on every push to `main`.
+This repository is intended to publish from:
+
+`https://github.com/ENTSeminar/webpage`
+
+Use GitHub's simple branch-based Pages setup:
+
+1. In the repository settings, open **Pages**.
+2. Set **Source** to **Deploy from a branch**.
+3. Set **Branch** to `main` and folder to `/root`.
+4. Save.
+
+The public URL will be:
+
+`https://entseminar.github.io/webpage/`
 
 The site has no runtime dependencies or build step.
