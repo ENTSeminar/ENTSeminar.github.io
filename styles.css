@@ -880,6 +880,10 @@ summary:focus-visible {
     aspect-ratio: 16 / 9;
   }
 
+  .card-image-wrap img {
+    object-position: center 22%;
+  }
+
   .organizers-grid {
     gap: 2.5rem;
   }
