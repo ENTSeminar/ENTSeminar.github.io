@@ -584,11 +584,21 @@ summary:focus-visible {
   background: var(--forest-950);
 }
 
+.organizers.section {
+  padding-block: clamp(1.35rem, 2.8vw, 2.4rem);
+}
+
 .organizers-grid {
   display: grid;
   grid-template-columns: minmax(260px, 0.68fr) minmax(520px, 1.32fr);
   align-items: center;
-  gap: clamp(2.5rem, 7vw, 6rem);
+  gap: clamp(1.25rem, 3.5vw, 2.8rem);
+}
+
+.organizers-heading {
+  width: min(100%, 230px);
+  justify-self: start;
+  text-align: left;
 }
 
 .organizers-heading p:last-child {
@@ -597,36 +607,55 @@ summary:focus-visible {
   color: rgba(255, 255, 255, 0.63);
 }
 
+.organizers h2 {
+  font-size: clamp(1.65rem, 2.6vw, 2.4rem);
+  line-height: 1.25em;
+  margin-left: clamp(3rem, 6.2vw, 4.8rem);
+}
+
+.organizers h2 span {
+  display: block;
+  margin-top: 0.2rem;
+}
+
 .organizer-card {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  width: min(100%, 560px);
+  grid-template-columns: 116px minmax(0, 1fr);
   align-items: center;
-  gap: 1.5rem;
-  padding: 2.2rem;
+  gap: 1.15rem;
+  justify-self: center;
+  margin-left: clamp(-1.5rem, -2.2vw, -0.6rem);
+  padding: 1.2rem;
   color: var(--ink);
   background: var(--cream-100);
 }
 
 .organizer-photo {
   display: block;
-  width: 132px;
+  width: 116px;
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center;
 }
 
+.organizer-details {
+  align-self: center;
+}
+
 .organizer-card h3 {
   margin: 0;
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 400;
 }
 
 .organizer-role {
-  margin: 0.35rem 0 1rem;
+  margin: 0.25rem 0 0.85rem;
   color: var(--muted);
   font-size: 0.85rem;
+  line-height: 1.45;
 }
 
 .organizer-chair {
@@ -657,17 +686,21 @@ summary:focus-visible {
   background: var(--cream-100);
 }
 
+.contact.section {
+  padding-block: clamp(1.2rem, 2.4vw, 2rem);
+}
+
 .contact-inner {
   display: grid;
   grid-template-columns: 80px 1fr auto;
   align-items: center;
-  gap: 2rem;
+  gap: 0.9rem;
 }
 
 .contact-icon {
   display: grid;
-  width: 76px;
-  height: 76px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   color: var(--cream-50);
   background: var(--forest-900);
@@ -675,31 +708,31 @@ summary:focus-visible {
 }
 
 .contact-icon svg {
-  width: 32px;
+  width: 21px;
   fill: none;
   stroke: currentColor;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1.5;
+  stroke-width: 1.65;
 }
 
 .contact h2 {
-  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  font-size: clamp(1.35rem, 2.2vw, 1.9rem);
 }
 
 .contact-copy p:last-child {
   max-width: 650px;
-  margin: 0.8rem 0 0;
+  margin: 0.25rem 0 0;
   color: var(--muted);
 }
 
 .button {
   display: inline-flex;
-  min-height: 52px;
+  min-height: 36px;
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.48rem 0.75rem;
   color: var(--white);
   background: var(--forest-900);
   border: 1px solid var(--forest-900);
@@ -892,6 +925,12 @@ summary:focus-visible {
     gap: 2.5rem;
   }
 
+  .organizers-heading {
+    width: 100%;
+    justify-self: start;
+    text-align: left;
+  }
+
   .organizer-card {
     grid-template-columns: 1fr;
     gap: 0;
@@ -904,7 +943,7 @@ summary:focus-visible {
     object-position: center 20%;
   }
 
-  .organizer-card > div {
+  .organizer-details {
     padding: 1.35rem;
   }
 
@@ -913,7 +952,7 @@ summary:focus-visible {
   }
 
   .organizer-role {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     font-size: 0.8rem;
     line-height: 1.4;
   }
