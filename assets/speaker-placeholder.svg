@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 880" role="img" aria-labelledby="title desc">
+  <title id="title">Speaker portrait placeholder</title>
+  <desc id="desc">Abstract illustration to be replaced by a speaker photograph.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfe8e2"/>
+      <stop offset="1" stop-color="#c7d7cd"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#174a3d" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="720" height="880" fill="url(#background)"/>
+  <rect width="720" height="880" fill="url(#grid)"/>
+  <circle cx="590" cy="90" r="230" fill="none" stroke="#ad8545" stroke-opacity=".32" stroke-width="2"/>
+  <circle cx="360" cy="330" r="112" fill="#174a3d" fill-opacity=".88"/>
+  <path d="M128 880c15-225 103-356 232-356s217 131 232 356" fill="#174a3d" fill-opacity=".88"/>
+  <path d="M0 762 720 430v450H0Z" fill="#10372e" fill-opacity=".1"/>
+  <text x="360" y="810" fill="#fbfaf6" font-family="Georgia,serif" font-size="23" text-anchor="middle" letter-spacing="3">SPEAKER PORTRAIT</text>
+</svg>
