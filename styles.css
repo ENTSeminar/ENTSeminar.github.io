@@ -893,16 +893,39 @@ summary:focus-visible {
   }
 
   .organizer-card {
-    grid-template-columns: 86px 1fr;
-    padding: 1.3rem;
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
   }
 
   .organizer-photo {
-    width: 86px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-position: center 20%;
+  }
+
+  .organizer-card > div {
+    padding: 1.35rem;
   }
 
   .organizer-card h3 {
-    font-size: 1.55rem;
+    font-size: 1.65rem;
+  }
+
+  .organizer-role {
+    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .organizer-card .organizer-bio {
+    margin-bottom: 0.8rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .organizer-links .text-link {
+    font-size: 0.76rem;
   }
 
   .contact-inner {
