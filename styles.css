@@ -366,6 +366,10 @@ summary:focus-visible {
   object-position: center;
 }
 
+.featured-image-sankalp {
+  object-position: 76% center;
+}
+
 .featured-image-wrap {
   aspect-ratio: 4 / 5;
   align-self: start;
@@ -512,6 +516,34 @@ summary:focus-visible {
   margin-top: 4rem;
 }
 
+.past-seminars {
+  padding-top: 5rem;
+}
+
+.past-seminar-card {
+  display: grid;
+  grid-template-columns: clamp(90px, 18vw, 180px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: clamp(1rem, 3vw, 2rem);
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.past-seminar-card > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.past-seminar-card h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
 .seminar-card {
   display: flex;
   min-width: 0;
@@ -522,6 +554,10 @@ summary:focus-visible {
 
 .card-image-wrap {
   aspect-ratio: 9 / 7;
+}
+
+.card-image-wrap img.speaker-photo-suresh {
+  object-position: center 25%;
 }
 
 .card-content {
@@ -810,6 +846,11 @@ summary:focus-visible {
   .featured-image {
     object-fit: contain;
     object-position: center 38%;
+  }
+
+  .featured-image-sankalp {
+    object-fit: cover;
+    object-position: 76% center;
   }
 
   .upcoming-grid {
